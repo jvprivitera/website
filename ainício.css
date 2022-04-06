@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+    
+body  {
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+}
+
+.container {
+    width: 70%;
+    margin:0 auto;
+}
+
+header {
+    background: #ffffff;
+}
+
+header ::after {
+    content:'';
+    display: table;
+    clear:both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0 ;
+}
+
+nav {
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav ul > li > a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul > li > a:hover {
+    color:rgb(83, 3, 3);
+
+}
+
+nav ul > li > a::before {
+    content: " ";
+    display: block;
+    height: 5px;
+    background-color:rgb(83, 3, 3);
+    
+    position: absolute;
+    top: 0px;
+    width: 0%;
+
+    transition: all ease-in-out 500ms;
+}
+
+nav ul > li > a:hover::before{
+    width:100%;
+
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:#ffffff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.background-image {
+    background-image: url('./jv fundo desfocado.png');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+.button {
+    height: 30px;
+    width: 70px;
+    padding: 0;
+    background: #ffffff00;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    overflow: hidden;
+    font-family: 'Quicksand', 'sans-serif';
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  .button:hover {
+    background:#b90c0c00;
+    cursor: pointer;
+  }
+  
+  .button:active {
+    background: #635a61;
+  }
+  
+  .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color:rgb(255, 255, 255);
+    height: 100%;
+  
+  }
+  
+  .button__icon {
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0);
+  
+  }
